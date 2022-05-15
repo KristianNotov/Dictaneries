@@ -1,0 +1,27 @@
+
+def print_func(number,data):
+    for i in range(number):
+        name = input()
+        if name in data:
+            print(f'{name} -> {data[name]}')
+        else:
+            print(f"Contact {name} does not exist.")
+
+phonebook = {}
+while True:
+    text = input()
+    if text.isdigit():
+        n = int(text)
+        print_func(number=n,data=phonebook)
+        break
+    command = text.split('-')
+
+    name = command[0]
+    phone = command[1]
+
+    if  name not in phonebook:
+        phonebook[name] = phone
+    else:
+        phonebook[name] = phone
+
+

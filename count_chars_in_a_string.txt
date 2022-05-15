@@ -1,0 +1,16 @@
+text = input()
+text_dict = dict()
+
+for i in text:
+    if i != ' ':
+        if i in text_dict:
+            text_dict[i]+=1
+        else:
+            text_dict[i]=1
+
+for key,value in text_dict.items():
+    print(f'{key} -> {value}')
+
+
+
+

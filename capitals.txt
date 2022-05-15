@@ -1,0 +1,9 @@
+cities = input().split(', ')
+capitals = input().split(', ')
+data = {}
+lengh = len(cities)
+for i in range(lengh):
+    data[cities[i]] = capitals[i]
+
+for key,value in data.items():
+    print(f'{key} -> {value}')

@@ -1,0 +1,13 @@
+data = {}
+while True:
+    command = input()
+    if command == 'stop':
+        break
+    digit = int(input())
+    if command not in data:
+        data[command] = digit
+    else:
+        data[command] += digit
+
+for key,value in data.items():
+    print(f'{key} -> {value}')
